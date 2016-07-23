@@ -28,12 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.rtbMiniText = new System.Windows.Forms.RichTextBox();
+            this.rtbFullText = new System.Windows.Forms.RichTextBox();
+            this.tbTitle = new System.Windows.Forms.TextBox();
+            this.tbDescription = new System.Windows.Forms.TextBox();
+            this.tbKeywords = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // rtbMiniText
+            // 
+            this.rtbMiniText.Location = new System.Drawing.Point(12, 12);
+            this.rtbMiniText.Name = "rtbMiniText";
+            this.rtbMiniText.Size = new System.Drawing.Size(623, 144);
+            this.rtbMiniText.TabIndex = 0;
+            this.rtbMiniText.Text = "";
+            // 
+            // rtbFullText
+            // 
+            this.rtbFullText.Location = new System.Drawing.Point(12, 173);
+            this.rtbFullText.Name = "rtbFullText";
+            this.rtbFullText.Size = new System.Drawing.Size(623, 144);
+            this.rtbFullText.TabIndex = 1;
+            this.rtbFullText.Text = "";
+            // 
+            // tbTitle
+            // 
+            this.tbTitle.Location = new System.Drawing.Point(12, 323);
+            this.tbTitle.Name = "tbTitle";
+            this.tbTitle.Size = new System.Drawing.Size(623, 22);
+            this.tbTitle.TabIndex = 2;
+            // 
+            // tbDescription
+            // 
+            this.tbDescription.Location = new System.Drawing.Point(12, 351);
+            this.tbDescription.Name = "tbDescription";
+            this.tbDescription.Size = new System.Drawing.Size(623, 22);
+            this.tbDescription.TabIndex = 3;
+            // 
+            // tbKeywords
+            // 
+            this.tbKeywords.Location = new System.Drawing.Point(12, 379);
+            this.tbKeywords.Name = "tbKeywords";
+            this.tbKeywords.Size = new System.Drawing.Size(623, 22);
+            this.tbKeywords.TabIndex = 4;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(912, 535);
+            this.Controls.Add(this.tbKeywords);
+            this.Controls.Add(this.tbDescription);
+            this.Controls.Add(this.tbTitle);
+            this.Controls.Add(this.rtbFullText);
+            this.Controls.Add(this.rtbMiniText);
+            this.Name = "Form1";
+            this.Text = "Racer-motors";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.RichTextBox rtbMiniText;
+        private System.Windows.Forms.RichTextBox rtbFullText;
+        private System.Windows.Forms.TextBox tbTitle;
+        private System.Windows.Forms.TextBox tbDescription;
+        private System.Windows.Forms.TextBox tbKeywords;
     }
 }
 
