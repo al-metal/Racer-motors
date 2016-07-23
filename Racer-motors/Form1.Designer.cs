@@ -33,6 +33,7 @@
             this.tbTitle = new System.Windows.Forms.TextBox();
             this.tbDescription = new System.Windows.Forms.TextBox();
             this.tbKeywords = new System.Windows.Forms.TextBox();
+            this.btnSaveTemplates = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rtbMiniText
@@ -72,11 +73,22 @@
             this.tbKeywords.Size = new System.Drawing.Size(623, 22);
             this.tbKeywords.TabIndex = 4;
             // 
+            // btnSaveTemplates
+            // 
+            this.btnSaveTemplates.Location = new System.Drawing.Point(693, 334);
+            this.btnSaveTemplates.Name = "btnSaveTemplates";
+            this.btnSaveTemplates.Size = new System.Drawing.Size(186, 67);
+            this.btnSaveTemplates.TabIndex = 5;
+            this.btnSaveTemplates.Text = "Сохранить шаблон";
+            this.btnSaveTemplates.UseVisualStyleBackColor = true;
+            this.btnSaveTemplates.Click += new System.EventHandler(this.btnSaveTemplates_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(912, 535);
+            this.Controls.Add(this.btnSaveTemplates);
             this.Controls.Add(this.tbKeywords);
             this.Controls.Add(this.tbDescription);
             this.Controls.Add(this.tbTitle);
@@ -96,6 +108,7 @@
         private System.Windows.Forms.TextBox tbTitle;
         private System.Windows.Forms.TextBox tbDescription;
         private System.Windows.Forms.TextBox tbKeywords;
+        private System.Windows.Forms.Button btnSaveTemplates;
     }
 }
 
